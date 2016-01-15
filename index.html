@@ -12,82 +12,128 @@
 <![endif]-->
 <style>
   html,body {
-    height:100%;
+    height: 100%;
   }
 
   h1 {
-    font-family: Arial,sans-serif
-    font-size:80px;
-    color:#DDCCEE;
+    font-family: Arial,sans-serif;
   }
-
-  .lead {
-    color:#DDCCEE;
-  }
-
 
   /* Custom container */
   .container-full {
     margin: 0 auto;
     width: 100%;
-    min-height:100%;
-    background-color:#110022;
-    color:#eee;
-    overflow:hidden;
+    min-height: 100%;
+    overflow: hidden;
+    color: #292a3e;
   }
 
-  .container-full a {
-    color:#efefef;
-    text-decoration:none;
+  .header-container {
+    background-color: #f8da64;
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
 
-  .v-center {
-    margin-top:7%;
+  .header-container .logo {
+    width: 800px;
+    max-width: 100%;
+  }
+
+  .form-container {
+    background-color: #f8da64;
+    display: inline-block;
+    padding: 18px;
+    padding-bottom: 0;
+    border-radius: 7px;
+    width: 90%;
+    max-width: 380px;
+  }
+
+  .archive {
+    margin-top: 7px;
+    text-align: right;
+  }
+
+  .links {
+    font-size: 39pt;
+    text-align: center;
+    margin-top: 28px;
+  }
+
+  .links a {
+    text-decoration: none;
+  }
+
+  .links .twitter {
+    color: #4099ff;
+  }
+
+  .links .twitter:hover {
+    color: #50a9ff;
+  }
+
+  .links .github {
+    color: #333333;
+  }
+
+  .links .github:hover {
+    color: #434343;
   }
 </style>
 </head>
 <body>
 <div class="container-full">
 
-  <div class="row">
-
-    <div class="col-lg-12 text-center v-center">
-      <h1>JS Tips</h1>
-      <p class="lead">A sign-up page for daily newsletter</p>
-
-      <br><br><br>
-
-      <!-- Begin MailChimp Signup Form -->
-      <div id="mc_embed_signup">
-        <form action="//github.us12.list-manage.com/subscribe/post?u=91c81a54b7387a056b046a2ca&amp;id=9551be788c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate class="col-lg-12">
-          <div id="mc_embed_signup_scroll">
-            <div class="mc-field-group input-group" style="width: 380px; text-align: center; margin: 0 auto;">
-              <input class="form-control input-lg required email" id="mce-EMAIL" name="EMAIL" title="Don't worry. We hate spam, and will not share your email with anyone." placeholder="Enter your email address" type="email">
-              <span class="input-group-btn"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-lg btn-primary"></span>
-            </div>
-            <div id="mce-responses" class="clear">
-              <div class="response" id="mce-error-response" style="display:none"></div>
-              <div class="response" id="mce-success-response" style="display:none"></div>
-            </div><!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_91c81a54b7387a056b046a2ca_9551be788c" tabindex="-1" value=""></div>
-          </div>
-        </form>
+  <div class="header-container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <img class="logo" src="images/jstips-header-blog.gif" alt="JS Tips logo">
       </div>
-      <!--End mc_embed_signup-->      
     </div>
-
-  </div> <!-- /row -->
-
-  <div class="row">
-
-    <div class="col-lg-12 text-center v-center" style="font-size:39pt;">
-      <a href="https://twitter.com/tips_js"><i class="icon-twitter"></i></a> <a href="https://github.com/loverajoel/jstips"><i class="icon-github"></i></a>
-    </div>
-
   </div>
 
-  <br><br><br><br><br>
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h1>JavaScript Tips</h1>
+      <h2 class="lead">A sign-up page for daily newsletter</h2>
+    </div>
+  </div>
 
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <div class="form-container">
+        <!-- Begin MailChimp Signup Form -->
+        <div id="mc_embed_signup">
+          <form action="//github.us12.list-manage.com/subscribe/post?u=91c81a54b7387a056b046a2ca&amp;id=9551be788c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate class="col-lg-12">
+            <div id="mc_embed_signup_scroll">
+              <div class="mc-field-group input-group" style="text-align: center; margin: 0 auto;">
+                <input class="form-control required email" id="mce-EMAIL" name="EMAIL" title="Don't worry. We hate spam, and will not share your email with anyone." placeholder="Your email address" type="email">
+                <span class="input-group-btn"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-success"></span>
+              </div>
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div><!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_91c81a54b7387a056b046a2ca_9551be788c" tabindex="-1" value=""></div>
+            </div>
+          </form>
+        </div>
+        <!--End mc_embed_signup-->
+        <p class="archive">
+          <a href="http://us12.campaign-archive1.com/home/?u=91c81a54b7387a056b046a2ca&id=9551be788c" target="_blank">
+            Email Campaign Archive
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12 links">
+      <a class="twitter" href="https://twitter.com/tips_js"><i class="icon-twitter"></i></a>
+      <a class="github" href="https://github.com/loverajoel/jstips"><i class="icon-github"></i></a>
+    </div>
+  </div>
 </div> <!-- /container full -->
 
 <!-- script references -->
@@ -95,4 +141,4 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 </body>
-</html> 
+</html>
